@@ -1,1 +1,0 @@
-Here we present a simple example of Data clustering and applying Principal Component Analysis (dimensionality reduction) to visualize the data in 2D. We Cluster the data in 3 main classes then we plot data in 2D (principal component 1 vs principal component 2) colored with clusters.
