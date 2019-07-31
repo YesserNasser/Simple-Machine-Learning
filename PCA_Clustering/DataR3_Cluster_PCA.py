@@ -41,4 +41,3 @@ plt.xlabel('Principal Component 1', fontsize=15)
 plt.ylabel('Principal Component 2', fontsize=15)
 plt.title('Principal Components Analysis (2)', fontsize=20)
 plt.grid()    
-# scalling the data is very import it produced different results with clustering and princiapl component analysis
