@@ -59,12 +59,6 @@ fig=plt.figure(figsize=(10,8))
 ax = fig.add_subplot(111,projection='3d')
 ax.scatter(x1_data,x2_data,y_data)
 ax.plot(x1_data,x2_data,y_pred_synth, c='r', marker='*')
-#X_surf,Y_surf = np.meshgrid(x1_data,x2_data)
-##zs = np.array(y_pred_synth)
-##Z_surf = y_pred_synth
-##Z_surf = np.reshape(X_surf.shape)
-##    
-##ax.plot_surface(X_surf,Y_surf,Z_surf)
 
 ax.set_xlabel('x1_data')
 ax.set_ylabel('x2_data')
