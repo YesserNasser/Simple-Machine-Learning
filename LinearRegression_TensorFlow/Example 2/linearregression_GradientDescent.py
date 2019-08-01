@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed May  8 15:46:39 2019
-
-@author: Yesser
+@author: Yesser H. Nasser
 """
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -79,8 +77,6 @@ def cost_function(X, Y, theta):
      
      return J
  #=============================================================================
-
-
 def gradient_descent(X, y, theta, alpha, iterations):
     """
     gradient_descent Performs gradient descent to learn theta
@@ -98,7 +94,6 @@ def gradient_descent(X, y, theta, alpha, iterations):
         cost_history[iteration] = cost
 
     return theta, cost_history
-
 
 (t, c) = gradient_descent(X,Y,theta,alpha, iterations)
 print(t)
