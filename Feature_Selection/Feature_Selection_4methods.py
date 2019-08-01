@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Nov 30 13:57:24 2018
-
-@author: Yesser
+@author: Yesser H. Nasser
 """
 from sklearn.datasets import load_boston
 import pandas as pd
@@ -33,7 +32,6 @@ Select the method to work with:
     3: Embadded Method with threshold
 '''
 Feature_Selection_Method = 3
-
 
 
 if Feature_Selection_Method == 0:
@@ -124,4 +122,4 @@ elif Feature_Selection_Method == 3:
     print('Based on the Embedded method (Lasso) (with threshold of 0.2) the selected features are: ', Selected_Features_sfm)
     
 else:
-    print('Please enter 0: for BE, 1: for RFE, 2a: for Embedded Method without threshold, 2b: for Embedded Method with threshold')
+    print('Please enter 0: for BE, 1: for RFE, 2: for Embedded Method without threshold, 3: for Embedded Method with threshold')
