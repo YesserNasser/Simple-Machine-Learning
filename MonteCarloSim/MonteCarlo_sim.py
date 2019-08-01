@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Apr 24 13:41:59 2018
-
-@author: Yesser
+@author: Yesser H. Nasser
 """
 """
 import pandas as pd
@@ -60,4 +59,3 @@ plt.hist(results_df['Commission_Amount'])
 plt.xlabel('Total_Commission_Amount', fontsize=15)
 plt.ylabel('Frequency', fontsize=15)    
 plt.title('Historgram Total Commission Using Monte Carlo Simulation 10000', fontsize=15)
-
