@@ -2,10 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun May 12 15:44:57 2019
-
-@author: Yesser
+@author: Yesser H. Nasser
 """
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -109,7 +107,7 @@ print('The accuracy of prediction is ', accuracy_score(y_test,y_pred))
 
 Logit_roc_auc = roc_auc_score (y_test,y_pred)
 print('The area under the ROC curve is:', Logit_roc_auc)
-#
+
 fpr,tpr,thresholds = roc_curve(y_test,yy[:,1])
 
 plt.figure(figsize=(4,4))
@@ -119,11 +117,3 @@ plt.xlabel('Faulse Positive Rate', fontsize=10)
 plt.ylabel('True Positive Rate', fontsize=10)
 plt.title('Receiver operating characteristic')
 plt.legend(loc='lower right')
-
-
-    
-    
-
-
-
-
