@@ -1,1 +1,1 @@
-# Simple-Machine-Learning
+# Basic-Machine-Learning
