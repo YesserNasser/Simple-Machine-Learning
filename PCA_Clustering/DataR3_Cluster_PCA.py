@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun May  5 12:05:00 2019
-
-@author: Yesser
+@author: Yesser H. Nasser
 """
 
 import pandas as pd
