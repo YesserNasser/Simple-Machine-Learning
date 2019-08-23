@@ -60,7 +60,7 @@ elif Feature_Selection_Method == 1:
     ''' ==================== Recursive Feature Elimination ==================== '''
     nof_list = np.arange(1, len(X.columns))
     high_score = 0
-    nof =0
+    nof = 0
     for n in range(len(nof_list)):
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state=0)
         model = LinearRegression()
