@@ -17,7 +17,6 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import roc_curve
 
-
 # import data
 data0 = pd.read_csv('data.csv')
 print(data0.info())
@@ -72,7 +71,6 @@ plt.ylabel('Frequency')
 plt.legend(loc='best')
 
 ## replacing all the variable with dummy variable
-#
 cat_vars=['job','marital','education','default','housing','loan','contact','month','day_of_week','poutcome']
 for var in cat_vars:
     g =var + '_dummy' 
@@ -80,7 +78,7 @@ for var in cat_vars:
     data0.drop(var,axis=1,inplace=True)
     data1=data0.join(g)
     data0=data1
-##       
+    
 # generate heatmap with the correlation of data
 data_correlation_matrix=data0.corr()
 plt.figure(figsize=(12,12))
