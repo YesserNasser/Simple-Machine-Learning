@@ -33,7 +33,6 @@ plt.grid()
 #  This can be extended to multivariable regression by extending the equation in vector form: Y = X*B 
 #  So how do I make the best line? In this figure, there are many possible lines. Which one is the best?
 # =============================================================================
-
 plt.figure(figsize=(10,8))
 plt.scatter(X_df,Y_df, c='k',marker='.')
 plt.plot([5,22],[6,6], '-')
@@ -42,7 +41,6 @@ plt.plot([5,15],[-5,25], '-')
 
 # =============================================================================
 # =============================================================================
-
 x_quad=[n/10 for n in range(0,100)]
 y_quad=[(n-4)**2 + 5 for n in x_quad]
 
