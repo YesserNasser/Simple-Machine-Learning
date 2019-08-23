@@ -15,19 +15,20 @@ def generate_data():
     return x1_data,x2_data,y_data
 
 # constract tensorflow
-
+# placeholders
 def linear_regression():
     x1 = tf.placeholder(tf.float32, shape=(None,), name = 'x1')
     x2 = tf.placeholder(tf.float32, shape=(None,), name = 'x2')
     y = tf.placeholder(tf.float32, shape=(None,), name = 'y')
     
+    # variables
     with tf.variable_scope('lreg') as scope:
         W1 = tf.Variable(np.random.normal(), name = 'W1')
         W2 = tf.Variable(np.random.normal(), name = 'W1')
         b = tf.Variable(np.random.normal(), name = 'b')
         
         y_pred = W1*x1 + W2*x2 + b
-        
+        # loss function
         loss = tf.reduce_mean(tf.square(y_pred - y))
         
     return x1,x2,y,y_pred,loss
@@ -35,8 +36,10 @@ def linear_regression():
 x1_data,x2_data,y_data = generate_data()
 x1,x2,y,y_pred,loss = linear_regression()
 
+# optimizer
 optimizer = tf.train.GradientDescentOptimizer(0.04).minimize(loss)
 
+# run the graph
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     feed_dict = {x1: x1_data, x2: x2_data, y: y_data}
